@@ -23,10 +23,12 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 def find_the_cheese(ingredients)
-  
   cheese_types = ["cheddar", "gouda", "camembert"]
   ingredients.length.times do |index|
-    result = cheese_types.include? 
-end
+    result = cheese_types.include? (ingredients[index])
+    if result
+      return ingredients[index]
+    end
+  end
 end
 
