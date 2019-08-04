@@ -25,6 +25,8 @@ end
 def find_the_cheese(ingredients)
   
   cheese_types = ["cheddar", "gouda", "camembert"]
-  result = ingredients.include
+  ingredients.length.times do |index|
+    result = cheese_types.include? 
+end
 end
 
